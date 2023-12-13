@@ -1,5 +1,3 @@
-﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
--- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
 
 CREATE TABLE "contacts" (
@@ -60,3 +58,16 @@ SELECT * from contacts
 SELECT * from category
 SELECT * from subcategory
 SELECT * from campaign
+
+
+ALTER TABLE public.campaign
+ALTER COLUMN goal TYPE numeric;
+
+ALTER TABLE public.campaign
+ALTER COLUMN pledged TYPE numeric;
+
+ALTER TABLE public.campaign
+ALTER COLUMN category_id TYPE VARCHAR; 
+
+ALTER TABLE public.campaign
+ALTER COLUMN subcategory_id TYPE VARCHAR;
