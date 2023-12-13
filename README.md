@@ -1,6 +1,6 @@
 Code by Ryan Dekker and Lucas Chacon;
 
-Jupyter rnotbook file cleans the crowdfunding and contacts Excel files and exports them as CSV files
+Jupyter notebook file cleans the crowdfunding and contacts Excel files and exports them as CSV files
   Used option 1 to use Python dictionary methods to take the contacts file to be converted to a dataframe 
     Had to adjust the header method from 2 to 3 due the heading of the contacts.xlsx file;
 
