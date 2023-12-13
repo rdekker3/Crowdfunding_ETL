@@ -54,11 +54,6 @@ REFERENCES "category" ("category_id");
 ALTER TABLE "campaign" ADD CONSTRAINT "fk_campaign_subcategory_id" FOREIGN KEY("subcategory_id")
 REFERENCES "subcategory" ("subcategory_id");
 
-SELECT * from contacts
-SELECT * from category
-SELECT * from subcategory
-SELECT * from campaign
-
 
 ALTER TABLE public.campaign
 ALTER COLUMN goal TYPE numeric;
@@ -71,3 +66,8 @@ ALTER COLUMN category_id TYPE VARCHAR;
 
 ALTER TABLE public.campaign
 ALTER COLUMN subcategory_id TYPE VARCHAR;
+
+SELECT * from contacts
+SELECT * from category
+SELECT * from subcategory
+SELECT * from campaign
